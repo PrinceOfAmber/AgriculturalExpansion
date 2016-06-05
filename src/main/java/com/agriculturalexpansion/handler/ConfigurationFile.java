@@ -18,10 +18,6 @@ public class ConfigurationFile {
 	public static boolean enableSproutBlockCrafting;
 	public static boolean reusableSproutsFromBlock;
 	
-	public static boolean easyMode;
-	public static boolean normalMode;
-	public static boolean hardMode;
-	
 	public static int resourceSeeds;
 	
 	public static int coalSprouts;
@@ -68,12 +64,6 @@ public class ConfigurationFile {
 	
 	public static void syncConfig() {
 		String category;
-		
-		category = "Mode";
-		config.addCustomCategoryComment(category, "Work in progress!");
-		easyMode = config.getBoolean("easyMode", category, false, "Easy Mode");
-		normalMode = config.getBoolean("normalMode", category, true, "Normal Mode");
-		hardMode = config.getBoolean("hardMode", category, false, "Hard Mode");
 		
 		category = "Loot chances";
 		config.addCustomCategoryComment(category, "Set to 0 to disable, 1 is very rare(like golden apple) and 100 is very common");

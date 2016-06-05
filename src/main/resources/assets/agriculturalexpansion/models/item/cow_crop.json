@@ -1,7 +1,7 @@
 {
   "parent":"builtin/generated",
   "textures": {
-    "layer0":"agriculturalexpansion:blocks/crop0"
+    "layer0":"agriculturalexpansion:blocks/cow_crop7"
   },
   "display": {
     "thirdperson": {

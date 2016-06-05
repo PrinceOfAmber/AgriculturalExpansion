@@ -21,7 +21,13 @@ item.ghast_essence.name=Ghast Essence
 item.wither_essence.name=Wither Essence
 item.blaze_essence.name=Blaze Essence
 item.enderman_essence.name=Enderman Essence
+
 item.squid_essence.name=Squid Essence
+item.cow_essence.name=Cow Essence
+item.sheep_essence.name=Sheep Essence
+item.chicken_essence.name=Chicken Essence
+item.pig_essence.name=Pig Essence
+item.rabbit_essence.name=Rabbit Essence
 
 item.zombie_chunk.name=Zombie Chunk
 item.creeper_chunk.name=Creeper Chunk
@@ -33,19 +39,15 @@ item.ghast_chunk.name=Ghast Chunk
 item.wither_chunk.name=Wither Chunk
 item.blaze_chunk.name=Blaze Chunk
 item.enderman_chunk.name=Enderman Chunk
+
 item.squid_chunk.name=Squid Chunk
-
-item.cow_essence.name=Cow Essence
-item.sheep_essence.name=Sheep Essence
-item.chicken_essence.name=Chicken Essence
-item.pig_essence.name=Pig Essence
-item.rabbit_essence.name=Rabbit Essence
-
 item.cow_chunk.name=Cow Chunk
 item.sheep_chunk.name=Sheep Chunk
 item.chicken_chunk.name=Chicken Chunk
 item.pig_chunk.name=Pig Chunk
 item.rabbit_chunk.name=Rabbit Chunk
+
+item.cooked_mob_chunk.name=Cooked Mob Chunk
 
 //Seeds
 item.resource_seed.name=Resource Seed
@@ -70,8 +72,8 @@ item.ghast_sprout.name=Ghast Sprout
 item.wither_sprout.name=Wither Sprout
 item.blaze_sprout.name=Blaze Sprout
 item.enderman_sprout.name=Enderman Sprout
-item.squid_sprout.name=Squid Sprout
 
+item.squid_sprout.name=Squid Sprout
 item.cow_sprout.name=Cow Sprout
 item.sheep_sprout.name=Sheep Sprout
 item.chicken_sprout.name=Chicken Sprout
@@ -104,8 +106,8 @@ tile.ghast_crop.name=Ghast Crop
 tile.wither_crop.name=Wither Crop
 tile.blaze_crop.name=Blaze Crop
 tile.enderman_crop.name=Enderman Crop
-tile.squid_crop.name=Squid Crop
 
+tile.squid_crop.name=Squid Crop
 tile.cow_crop.name=Cow Crop
 tile.sheep_crop.name=Sheep Crop
 tile.chicken_crop.name=Chicken Crop
@@ -114,3 +116,37 @@ tile.rabbit_crop.name=Rabbit Crop
 
 //CreativeTabs
 itemGroup.tabAgriculturalExpansion=Agricultural Expansion
+
+//Achievements
+achievement.sproutFarmer=Sprout Farmer
+achievement.sproutFarmer.desc=Make some Resource Seeds and plant them to obtain sprouts for resource crops!
+
+achievement.collectSprout=My First Sprout
+achievement.collectSprout.desc=For a resource seed you need 4 resource sprouts, go ahead and get them!
+
+achievement.collectChunk=My First Mob Chunk
+achievement.collectChunk.desc=For mob crops you need mob chunks, you can obtain them by killing the specific mob.
+
+achievement.growMobs=Grow Mob Crops
+achievement.growMobs.desc=Make some zombie, creeper or skeleton sprout!
+
+achievement.growGhast=Free Tears?
+achievement.growGhast.desc=Obtain a ghast chunk and make it sprout!
+
+achievement.growWither=Wither Chunk
+achievement.growWither.desc=Obtain a wither chunk and make it sprout!
+
+achievement.growEnderman=Ender?
+achievement.growEnderman.desc=Obtain an enderman chunk and make it sprout!
+
+achievement.growResource=Grow Resources
+achievement.growResource.desc=Make some coal, iron or gold sprouts to get started!
+
+achievement.growDiamond=Need Some Diamonds?
+achievement.growDiamond.desc=Make diamond sprouts!
+
+achievement.growEmerald=King of the Villages!
+achievement.growEmerald.desc=Make emerald sprouts!
+
+achievement.growGlowstone=Too dark?
+achievement.growGlowstone.desc=Make glowstone sprouts!

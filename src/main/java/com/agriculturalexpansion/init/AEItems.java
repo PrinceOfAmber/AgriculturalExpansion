@@ -1,5 +1,6 @@
 package com.agriculturalexpansion.init;
 
+import com.agriculturalexpansion.extend.AEFood;
 import com.agriculturalexpansion.extend.AEItem;
 import com.agriculturalexpansion.extend.AESeed;
 import com.agriculturalexpansion.main.Reference;
@@ -65,6 +66,9 @@ public class AEItems {
 	public static Item chicken_chunk = new AEItem("chicken_chunk");
 	public static Item pig_chunk = new AEItem("pig_chunk");
 	public static Item rabbit_chunk = new AEItem("rabbit_chunk");
+	
+	//Food
+	public static Item cooked_mob_chunk = new AEFood("cooked_mob_chunk", 7, 8, true);
 	
 	//Seeds
 	public static Item resource_seed = new AESeed("resource_seed", AEBlocks.resource_crop, Blocks.FARMLAND);
@@ -151,6 +155,9 @@ public class AEItems {
 		GameRegistry.registerItem((pig_chunk), "pig_chunk");
 		GameRegistry.registerItem((rabbit_chunk), "rabbit_chunk");
 		
+		//Food
+		GameRegistry.registerItem((cooked_mob_chunk), "cooked_mob_chunk");
+		
 		//Seeds
 		GameRegistry.registerItem((resource_seed), "resource_seed");
 		
@@ -233,6 +240,9 @@ public class AEItems {
 		initModel(chicken_chunk);
 		initModel(pig_chunk);
 		initModel(rabbit_chunk);
+		
+		//Food
+		initModel(cooked_mob_chunk);
 		
 		//Seeds
 		initModel(resource_seed);

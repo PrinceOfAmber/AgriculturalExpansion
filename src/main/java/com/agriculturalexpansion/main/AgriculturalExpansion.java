@@ -2,6 +2,7 @@ package com.agriculturalexpansion.main;
 
 import java.io.File;
 
+import com.agriculturalexpansion.handler.Achievements;
 import com.agriculturalexpansion.handler.ConfigurationFile;
 import com.agriculturalexpansion.handler.CreativeTab;
 import com.agriculturalexpansion.handler.DungeonLoot;
@@ -14,6 +15,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLInterModComms;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
@@ -36,11 +38,15 @@ public class AgriculturalExpansion {
 		MinecraftForge.EVENT_BUS.register(new MobDrops());
 		MinecraftForge.EVENT_BUS.register(new DungeonLoot());
 		
+		FMLInterModComms.sendMessage("Waila", "register", "com.agriculturalexpansion.handler.WailaDataProvider.callbackRegister");
+		
 	}
 	
 	@EventHandler
 	public void Init(FMLInitializationEvent event) {
 		this.proxy.init(event);
+		
+		Achievements.initAchievements();
 		
 	}
 	

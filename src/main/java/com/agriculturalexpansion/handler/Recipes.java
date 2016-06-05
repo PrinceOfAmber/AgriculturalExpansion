@@ -34,7 +34,6 @@ public class Recipes {
 		});
 		}
 		
-		//Default Recipes
 		//Vanilla Resources
 		GameRegistry.addShapedRecipe(new ItemStack(Items.COAL, 2), new Object[] {
 				" X ", "X X", " X ",
@@ -212,6 +211,20 @@ public class Recipes {
 				'X', AEItems.rabbit_essence
 		});
 		
+		//Uses for mob chunks
+		GameRegistry.addShapedRecipe(new ItemStack(Items.GUNPOWDER, 1), new Object[]{
+				"   ", "XXX", "   ", 
+				'X', AEItems.creeper_chunk
+		});
+		GameRegistry.addShapedRecipe(new ItemStack(Items.BONE, 1), new Object[]{
+				"   ", "XXX", "   ", 
+				'X', AEItems.skeleton_chunk
+		});
+		GameRegistry.addShapedRecipe(new ItemStack(Items.SLIME_BALL, 1), new Object[]{
+				"   ", "XXX", "   ", 
+				'X', AEItems.slime_chunk
+		});
+		
 		//Seed Crafting
 		//Vanilla Resources
 		GameRegistry.addShapedRecipe(new ItemStack(AEItems.resource_seed), new Object[] {
@@ -327,6 +340,17 @@ public class Recipes {
 	}
 	
 	public static void initSmelting() {
+		
+		GameRegistry.addSmelting(AEItems.zombie_chunk, new ItemStack(AEItems.cooked_mob_chunk, 1), 10.0F);
+		GameRegistry.addSmelting(AEItems.spider_chunk, new ItemStack(AEItems.cooked_mob_chunk, 1), 10.0F);
+		GameRegistry.addSmelting(AEItems.guardian_chunk, new ItemStack(AEItems.cooked_mob_chunk, 1), 10.0F);
+		
+		GameRegistry.addSmelting(AEItems.squid_chunk, new ItemStack(AEItems.cooked_mob_chunk, 1), 10.0F);
+		GameRegistry.addSmelting(AEItems.cow_chunk, new ItemStack(Items.COOKED_BEEF, 1), 10.0F);
+		GameRegistry.addSmelting(AEItems.sheep_chunk, new ItemStack(Items.COOKED_MUTTON, 1), 10.0F);
+		GameRegistry.addSmelting(AEItems.chicken_chunk, new ItemStack(Items.COOKED_CHICKEN, 1), 10.0F);
+		GameRegistry.addSmelting(AEItems.pig_chunk, new ItemStack(Items.COOKED_PORKCHOP, 1), 10.0F);
+		GameRegistry.addSmelting(AEItems.rabbit_chunk, new ItemStack(Items.COOKED_RABBIT, 1), 10.0F);
 		
 	}
 	
