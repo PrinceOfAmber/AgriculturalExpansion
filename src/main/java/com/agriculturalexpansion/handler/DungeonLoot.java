@@ -55,6 +55,13 @@ public class DungeonLoot {
             main.addEntry(new LootEntryItem(AEItems.pig_sprout, ConfigurationFile.pigSprouts, 0, new LootFunction[0], new LootCondition[0], Reference.MOD_ID + ":pigSprouts"));
             main.addEntry(new LootEntryItem(AEItems.rabbit_sprout, ConfigurationFile.rabbitSprouts, 0, new LootFunction[0], new LootCondition[0], Reference.MOD_ID + ":rabbitSprouts"));
             
+            //Other Sprouts
+            main.addEntry(new LootEntryItem(AEItems.earth_sprout, ConfigurationFile.earthSprouts, 0, new LootFunction[0], new LootCondition[0], Reference.MOD_ID + ":earthSprouts"));
+            main.addEntry(new LootEntryItem(AEItems.water_sprout, ConfigurationFile.waterSprouts, 0, new LootFunction[0], new LootCondition[0], Reference.MOD_ID + ":waterSprouts"));
+            main.addEntry(new LootEntryItem(AEItems.fire_sprout, ConfigurationFile.fireSprouts, 0, new LootFunction[0], new LootCondition[0], Reference.MOD_ID + ":fireSprouts"));
+            main.addEntry(new LootEntryItem(AEItems.experience_sprout, ConfigurationFile.experienceSprouts, 0, new LootFunction[0], new LootCondition[0], Reference.MOD_ID + ":experienceSprouts"));
+            main.addEntry(new LootEntryItem(AEItems.dye_sprout, ConfigurationFile.dyeSprouts, 0, new LootFunction[0], new LootCondition[0], Reference.MOD_ID + ":dyeSprouts"));
+            
         }
     }
 

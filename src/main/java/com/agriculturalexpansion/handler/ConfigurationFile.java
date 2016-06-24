@@ -48,7 +48,11 @@ public class ConfigurationFile {
 	public static int pigSprouts;
 	public static int rabbitSprouts;
 	
-	public static boolean enableSproutBlock;
+	public static int earthSprouts;
+	public static int waterSprouts;
+	public static int fireSprouts;
+	public static int experienceSprouts;
+	public static int dyeSprouts;
 	
 	@SubscribeEvent
     public void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent eventArgs) {
@@ -97,14 +101,20 @@ public class ConfigurationFile {
 		pigSprouts = config.getInt("pigSprouts", category, 9, 0, 100, "Pig Sprouts generation");
 		rabbitSprouts = config.getInt("rabbitSprouts", category, 7, 0, 100, "Rabbit Sprouts generation");
 		
+		rabbitSprouts = config.getInt("earthSprouts", category, 7, 0, 100, "Earth Sprouts generation");
+		rabbitSprouts = config.getInt("waterSprouts", category, 6, 0, 100, "Water Sprouts generation");
+		rabbitSprouts = config.getInt("fireSprouts", category, 8, 0, 100, "Fire Sprouts generation");
+		rabbitSprouts = config.getInt("experienceSprouts", category, 5, 0, 100, "Experience Sprouts generation");
+		rabbitSprouts = config.getInt("dyeSprouts", category, 10, 0, 100, "Dye Sprouts generation");
+		
 		category = "General";
 		config.addCustomCategoryComment(category, "General Settings");
 		canUseBonemeal = config.getBoolean("canUseBonemeal", category, false, "Set to true if bonemeal can be used on crops.");
 		
 		category = "Crafting";
-		config.addCustomCategoryComment(category, "This thing is broken ... need to fix it!");
-		enableSproutBlockCrafting = config.getBoolean("enableSproutBlockCrafting", category, true, "Set to false if you want to disable Sprout Block crafting.");
-		reusableSproutsFromBlock = config.getBoolean("reusableSproutsFromBlock", category, true, "Set to false if you want the Sprut Block to be reusable.");
+		config.addCustomCategoryComment(category, "Disable/enable recipes.");
+		enableSproutBlockCrafting = config.getBoolean("enableSproutBlockCrafting", category, true, "Set to false to disable Sprout Block crafting recipe.");
+		reusableSproutsFromBlock = config.getBoolean("reusableSproutsFromBlock", category, true, "Set to false if you don't want to be able to craft sprouts using Sprout Block.");
 		
 		config.save();
 	}

@@ -38,6 +38,8 @@ public class AgriculturalExpansion {
 		MinecraftForge.EVENT_BUS.register(new MobDrops());
 		MinecraftForge.EVENT_BUS.register(new DungeonLoot());
 		
+		//Recipes.init();
+		
 		FMLInterModComms.sendMessage("Waila", "register", "com.agriculturalexpansion.handler.WailaDataProvider.callbackRegister");
 		
 	}
@@ -53,6 +55,8 @@ public class AgriculturalExpansion {
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent postEvent) {
 		this.proxy.postInit(postEvent);
+	
+		Recipes.init();
 		
 	}
 

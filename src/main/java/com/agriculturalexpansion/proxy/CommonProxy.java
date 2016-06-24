@@ -11,11 +11,9 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class CommonProxy {
 	
 	public void preInit(FMLPreInitializationEvent preEvent) {
-	
+		
 		AEBlocks.initBlocks();
 		AEItems.initItems();
-		
-		Recipes.init();
 
 	}
 	

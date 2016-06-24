@@ -30,7 +30,7 @@ compile files ("run/mods/Waila-1.7.0-B3_1.9.4.jar")
 
 
 minecraft {
-    version = "1.9.4-12.17.0.1940"
+    version = "1.9.4-12.17.0.1957"
     runDir = "run"
     
     // the mappings can be changed at any time, and must be in the following format.

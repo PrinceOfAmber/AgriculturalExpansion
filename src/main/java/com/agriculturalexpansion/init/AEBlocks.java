@@ -1,7 +1,8 @@
 package com.agriculturalexpansion.init;
 
-import com.agriculturalexpansion.extend.AECrops.*;
 import com.agriculturalexpansion.extend.AEBlock;
+import com.agriculturalexpansion.extend.AECrop;
+import com.agriculturalexpansion.extend.AECrops.*;
 import com.agriculturalexpansion.handler.ConfigurationFile;
 import com.agriculturalexpansion.main.Reference;
 
@@ -20,7 +21,7 @@ public class AEBlocks {
 	
 	//Resource Crop
 	public static Block resource_crop = new ResourceCrop("resource_crop");
-	
+		
 	//Vanilla Crops
 	public static Block coal_crop = new CoalCrop("coal_crop");
 	public static Block iron_crop = new IronCrop("iron_crop");
@@ -43,7 +44,7 @@ public class AEBlocks {
 	public static Block wither_crop = new WitherCrop("wither_crop");
 	public static Block blaze_crop = new BlazeCrop("blaze_crop");
 	public static Block enderman_crop = new EndermanCrop("enderman_crop");
-	
+		
 	//Passive Mobs Crops
 	public static Block squid_crop = new SquidCrop("squid_crop");
 	public static Block cow_crop = new CowCrop("cow_crop");
@@ -51,6 +52,38 @@ public class AEBlocks {
 	public static Block chicken_crop = new ChickenCrop("chicken_crop");
 	public static Block pig_crop = new PigCrop("pig_crop");
 	public static Block rabbit_crop = new RabbitCrop("rabbit_crop");
+	
+	//Other Crops
+	public static Block earth_crop = new EarthCrop("earth_crop");
+	public static Block water_crop = new WaterCrop("water_crop");
+	public static Block fire_crop = new FireCrop("fire_crop");
+	public static Block experience_crop = new ExperienceCrop("experience_crop");
+	public static Block dye_crop = new DyeCrop("dye_crop");
+	
+	//OreDictionary Crops
+	//Basic Crops
+	public static Block copper_crop = new CopperCrop("copper_crop");
+	public static Block tin_crop = new TinCrop("tin_crop");
+	public static Block silver_crop = new SilverCrop("silver_crop");
+	public static Block lead_crop = new LeadCrop("lead_crop");
+	public static Block nickel_crop = new NickelCrop("nickel_crop");
+	public static Block platinum_crop = new PlatinumCrop("platinum_crop");
+	public static Block aluminum_crop = new AluminumCrop("aluminum_crop");
+	
+	//TiCon Crops
+	public static Block ardite_crop = new ArditeCrop("ardite_crop");
+	public static Block cobalt_crop = new CobaltCrop("cobalt_crop");
+	public static Block alubrass_crop = new AlubrassCrop("alubrass_crop");
+	
+	//Alloy Crops
+	public static Block bronze_crop = new BronzeCrop("bronze_crop");
+	public static Block steel_crop = new SteelCrop("steel_crop");
+	public static Block invar_crop = new InvarCrop("invar_crop");
+	public static Block electrum_crop = new ElectrumCrop("electrum_crop");
+	
+	//Gem Crops
+	public static Block ruby_crop = new RubyCrop("ruby_crop");
+	public static Block sapphire_crop = new SapphireCrop("sapphire_crop");
 	
 	public static void initBlocks() {
 		
@@ -91,9 +124,40 @@ public class AEBlocks {
 		GameRegistry.registerBlock((pig_crop), "pig_crop");
 		GameRegistry.registerBlock((rabbit_crop), "rabbit_crop");
 		
+		//Other Crops
+		GameRegistry.registerBlock((earth_crop), "earth_crop");
+		GameRegistry.registerBlock((water_crop), "water_crop");
+		GameRegistry.registerBlock((fire_crop), "fire_crop");
+		GameRegistry.registerBlock((experience_crop), "experience_crop");
+		GameRegistry.registerBlock((dye_crop), "dye_crop");
+		
+		//OreDictionary Crops
+		//Basic Crops
+		GameRegistry.registerBlock((copper_crop), "copper_crop");
+		GameRegistry.registerBlock((tin_crop), "tin_crop");
+		GameRegistry.registerBlock((silver_crop), "silver_crop");
+		GameRegistry.registerBlock((lead_crop), "lead_crop");
+		GameRegistry.registerBlock((nickel_crop), "nickel_crop");
+		GameRegistry.registerBlock((platinum_crop), "platinum_crop");
+		GameRegistry.registerBlock((aluminum_crop), "aluminum_crop");
+		
+		//TiCon Crops
+		GameRegistry.registerBlock((ardite_crop), "ardite_crop");
+		GameRegistry.registerBlock((cobalt_crop), "cobalt_crop");
+		GameRegistry.registerBlock((alubrass_crop), "alubrass_crop");
+		
+		//Alloy Crops
+		GameRegistry.registerBlock((bronze_crop), "bronze_crop");
+		GameRegistry.registerBlock((steel_crop), "steel_crop");
+		GameRegistry.registerBlock((invar_crop), "invar_crop");
+		GameRegistry.registerBlock((electrum_crop), "electrum_crop");
+		
+		//Gem Crops
+		GameRegistry.registerBlock((ruby_crop), "ruby_crop");
+		GameRegistry.registerBlock((sapphire_crop), "sapphire_crop");
 	}
 	
-public static void initModels() {
+	public static void initModels() {
 		
 		//Blocks
 		initModel(sprout_block);
@@ -131,6 +195,38 @@ public static void initModels() {
 		initModel(chicken_crop);
 		initModel(pig_crop);
 		initModel(rabbit_crop);
+		
+		//Other Crops
+		initModel(earth_crop);
+		initModel(water_crop);
+		initModel(fire_crop);
+		initModel(experience_crop);
+		initModel(dye_crop);
+		
+		//OreDictionary Crops
+		//Basic Crops
+		initModel(copper_crop);
+		initModel(tin_crop);
+		initModel(silver_crop);
+		initModel(lead_crop);
+		initModel(nickel_crop);
+		initModel(platinum_crop);
+		initModel(aluminum_crop);
+		
+		//TiCon Crops
+		initModel(ardite_crop);
+		initModel(cobalt_crop);
+		initModel(alubrass_crop);
+		
+		//Alloy Crops
+		initModel(bronze_crop);
+		initModel(steel_crop);
+		initModel(invar_crop);
+		initModel(electrum_crop);
+		
+		//Gem Crops
+		initModel(ruby_crop);
+		initModel(sapphire_crop);
 	}
 	
 	public static void initModel(Block block) {

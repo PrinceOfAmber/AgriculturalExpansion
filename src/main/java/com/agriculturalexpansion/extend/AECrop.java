@@ -1,8 +1,12 @@
 package com.agriculturalexpansion.extend;
 
+import java.util.Collection;
 import java.util.Random;
 
+import javax.annotation.Nullable;
+
 import com.agriculturalexpansion.handler.ConfigurationFile;
+import com.agriculturalexpansion.init.AEItems;
 
 import net.minecraft.block.BlockCrops;
 import net.minecraft.block.SoundType;
@@ -17,9 +21,10 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class AECrop extends BlockCrops {
-
+	
     public AECrop(String name) {
     	super();
     	this.setUnlocalizedName(name);
@@ -47,8 +52,7 @@ public class AECrop extends BlockCrops {
             int k = 3 + fortune;
 
             for (int i = 0; i < 3 + fortune; ++i) {
-            	
-                if (rand.nextInt(2 * getMaxAge()) <= age){
+                if (rand.nextInt(2 * getMaxAge()) <= age) {
                     ret.add(new ItemStack(this.getSeed(), 1, 0));
                 }
                 if (rand.nextInt(1) < 0) {
@@ -58,5 +62,15 @@ public class AECrop extends BlockCrops {
         }
         return ret;
     }
+    
+    @Nullable
+    public Item getItemDropped(IBlockState state, Random rand, int fortune) {
+        return this.isMaxAge(state) ? this.getCrop() : this.getSeed();
+    }
+
+    public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state) {
+        return new ItemStack(this.getSeed());
+    }
+        
     
 }
