@@ -1,6 +1,8 @@
 package com.agriculturalexpansion.extend;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 import java.util.Random;
 
 import javax.annotation.Nullable;
@@ -20,6 +22,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -43,24 +46,32 @@ public class AECrop extends BlockCrops {
     }
     
     @Override
-    public java.util.List<ItemStack> getDrops(net.minecraft.world.IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
-        java.util.List<ItemStack> ret = super.getDrops(world, pos, state, fortune);
-        int age = getAge(state);
-        Random rand = world instanceof World ? ((World)world).rand : new Random();
+    public List<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
+        List<ItemStack> drops = new ArrayList<ItemStack>();
 
-        if (age >= getMaxAge()) {
-            int k = 3 + fortune;
+        int age = state.getValue(AGE);
+        Random rand = ((World) world).rand;
 
-            for (int i = 0; i < 3 + fortune; ++i) {
-                if (rand.nextInt(2 * getMaxAge()) <= age) {
-                    ret.add(new ItemStack(this.getSeed(), 1, 0));
-                }
-                if (rand.nextInt(1) < 0) {
-                	ret.add(new ItemStack(this.getCrop(), 1, 0));
-                }
+        int essence = 0;
+        int seeds = 1;
+
+        if (age == 7) {
+            //33% chance to get an extra seed
+            if (rand.nextInt(3) == 0){
+                seeds++;
+            }
+
+            //10% chance to get a second essence
+            if (rand.nextInt(10) == 0) {
+            	essence = 2;
+            } else {
+            	essence = 1;
             }
         }
-        return ret;
+
+        drops.add(new ItemStack(this.getSeed(), seeds, 0));
+        drops.add(new ItemStack(this.getCrop(), essence, 0));
+        return drops;
     }
     
     @Nullable
