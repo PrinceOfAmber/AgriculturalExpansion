@@ -32,15 +32,17 @@ item.chicken_essence.name=Chicken Essence
 item.pig_essence.name=Pig Essence
 item.rabbit_essence.name=Rabbit Essence
 
-//Other Essence
+//Special Essence
 item.earth_essence.name=Earth Essence
 item.water_essence.name=Water Essence
 item.fire_essence.name=Fire Essence
 item.experience_essence.name=Experience Essence
 item.dye_essence.name=Dye Essence
+item.nature_essence.name=Nature Essence
+item.nether_essence.name=Nether Essence
 
 //OreDictionary Essence
-//Basic Essence
+//Common Essence
 item.copper_essence.name=Copper Essence
 item.tin_essence.name=Tin Essence
 item.silver_essence.name=Silver Essence
@@ -48,21 +50,36 @@ item.lead_essence.name=Lead Essence
 item.nickel_essence.name=Nickel Essence
 item.platinum_essence.name=Platinum Essence
 item.aluminum_essence.name=Aluminum Essence
+item.iridium_essence.name=Iridium Essence
+item.titanium_essence.name=Titanium Essence
+item.tungsten_essence.name=Tungsten Essence
+item.zinc_essence.name=Zinc Essence
 
 //TiCon Essence
 item.ardite_essence.name=Ardite Essence
 item.cobalt_essence.name=Cobalt Essence
 item.alubrass_essence.name=Alubrass Essence
+item.manyullyn_essence.name=Manyullyn Essence
 
 //Alloy Essence
 item.bronze_essence.name=Bronze Essence
 item.steel_essence.name=Steel Essence
 item.invar_essence.name=Invar Essence
 item.electrum_essence.name=Electrum Essence
+item.brass_essence.name=Brass Essence
 
 //Gem Essence
 item.ruby_essence.name=Ruby Essence
 item.sapphire_essence.name=Sapphire Essence
+item.amber_essence.name=Amber Essence
+item.malachite_essence.name=Malachite Essence
+item.peridot_essence.name=Peridot Essence
+item.tanzanite_essence.name=Tanzanite Essence
+item.topaz_essence.name=Topaz Essence
+
+//Other Essence
+item.apatite_essence.name=Apatite Essence
+item.rubber_essence.name=Rubber Essence
 
 //Hostile Mobs Chunks
 item.zombie_chunk.name=Zombie Chunk
@@ -121,15 +138,17 @@ item.chicken_sprout.name=Chicken Sprout
 item.pig_sprout.name=Pig Sprout
 item.rabbit_sprout.name=Rabbit Sprout
 
-//Other Sprouts
+//Special Sprouts
 item.earth_sprout.name=Earth Sprout
 item.water_sprout.name=Water Sprout
 item.fire_sprout.name=Fire Sprout
 item.experience_sprout.name=Experience Sprout
 item.dye_sprout.name=Dye Sprout
+item.nature_sprout.name=Nature Sprout
+item.nether_sprout.name=Nether Sprout
 
 //OreDictionary Sprouts
-//Basic Sprouts
+//Common Sprouts
 item.copper_sprout.name=Copper Sprout
 item.tin_sprout.name=Tin Sprout
 item.silver_sprout.name=Silver Sprout
@@ -137,22 +156,36 @@ item.lead_sprout.name=Lead Sprout
 item.nickel_sprout.name=Nickel Sprout
 item.platinum_sprout.name=Platinum Sprout
 item.aluminum_sprout.name=Aluminum Sprout
+item.iridium_sprout.name=Iridium Sprout
+item.titanium_sprout.name=Titanium Sprout
+item.tungsten_sprout.name=Tungsten Sprout
+item.zinc_sprout.name=Zinc Sprout
 
 //TiCon Sprouts
 item.ardite_sprout.name=Ardite Sprout
 item.cobalt_sprout.name=Cobalt Sprout
 item.alubrass_sprout.name=Alubrass Sprout
+item.manyullyn_sprout.name=Manyullyn Sprout
 
 //Alloy Sprouts
 item.bronze_sprout.name=Bronze Sprout
 item.steel_sprout.name=Steel Sprout
 item.invar_sprout.name=Invar Sprout
 item.electrum_sprout.name=Electrum Sprout
+item.brass_sprout.name=Brass Sprout
 
 //Gem Sprouts
 item.ruby_sprout.name=Ruby Sprout
 item.sapphire_sprout.name=Sapphire Sprout
+item.amber_sprout.name=Amber Sprout
+item.malachite_sprout.name=Malachite Sprout
+item.peridot_sprout.name=Peridot Sprout
+item.tanzanite_sprout.name=Tanzanite Sprout
+item.topaz_sprout.name=Topaz Sprout
 
+//Other Sprouts
+item.apatite_sprout.name=Apatite Sprout
+item.rubber_sprout.name=Rubber Sprout
 
 //Blocks
 tile.sprout_block.name=Sprout Block
@@ -191,15 +224,17 @@ tile.chicken_crop.name=Chicken Crop
 tile.pig_crop.name=Pig Crop
 tile.rabbit_crop.name=Rabbit Crop
 
-//Other Crops
+//Special Crops
 tile.earth_crop.name=Earth Crop
 tile.water_crop.name=Water Crop
 tile.fire_crop.name=Fire Crop
 tile.experience_crop.name=Experience Crop
 tile.dye_crop.name=Dye Crop
+tile.nature_crop.name=Nature Crop
+tile.nether_crop.name=Nether Crop
 
 //OreDictionary Crops
-//Basic Crops
+//Common Crops
 tile.copper_crop.name=Copper Crop
 tile.tin_crop.name=Tin Crop
 tile.silver_crop.name=Silver Crop
@@ -207,21 +242,36 @@ tile.lead_crop.name=Lead Crop
 tile.nickel_crop.name=Nickel Crop
 tile.platinum_crop.name=Platinum Crop
 tile.aluminum_crop.name=Aluminum Crop
+tile.iridium_crop.name=Iridium Crop
+tile.titanium_crop.name=Titanium Crop
+tile.tungsten_crop.name=Tungsten Crop
+tile.zinc_crop.name=Zinc Crop
 
 //TiCon Crops
 tile.ardite_crop.name=Ardite Crop
 tile.cobalt_crop.name=Cobalt Crop
 tile.alubrass_crop.name=Alubrass Crop
+tile.manyullyn_crop.name=Manyullyn Crop
 
 //Alloy Crops
 tile.bronze_crop.name=Bronze Crop
 tile.steel_crop.name=Steel Crop
 tile.invar_crop.name=Invar Crop
-tile.electrum_crop.name=Eletctrum Crop
+tile.electrum_crop.name=Electrum Crop
+tile.brass_crop.name=Brass Crop
 
 //Gem Crops
 tile.ruby_crop.name=Ruby Crop
 tile.sapphire_crop.name=Sapphire Crop
+tile.amber_crop.name=Amber Crop
+tile.malachite_crop.name=Malachite Crop
+tile.peridot_crop.name=Peridot Crop
+tile.tanzanite_crop.name=Tanzanite Crop
+tile.topaz_crop.name=Topaz Crop
+
+//Other Crops
+tile.apatite_crop.name=Apatite Crop
+tile.rubber_crop.name=Rubber Crop
 
 //CreativeTabs
 itemGroup.tabAgriculturalExpansion=Agricultural Expansion
